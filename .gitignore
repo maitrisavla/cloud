@@ -1,0 +1,4 @@
+venv/
+*/migrations/00*
+*.pyc
+db.sqlite3
