@@ -39,7 +39,7 @@ def registration(request):
                 user.save()
                 user = authenticate(username=username, password=password)
                 django_login(request, user)
-                return redirect('home')
+                return redirect('index')
             except IntegrityError:
                 error_message = "Username or email already exists."
                 return render(request, 'registration.html', {'error_message': error_message})
